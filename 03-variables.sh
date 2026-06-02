@@ -1,7 +1,7 @@
 # 1/bin/bash
 
-PRESON1=Trump
-PRESON2=Musk
+PRESON1=Rajkumar
+PRESON2=Virat
 
 
 echo "$PRESON1:: Hey $PRESON2, How are you?"
