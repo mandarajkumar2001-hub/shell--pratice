@@ -3,25 +3,25 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo"ERROR:: Please run this script with root access"
-    Exit 1
+    echo "ERROR:: Please run this script with root success"
+    exit 1
 else
-     echo "You are running with root access"
+     echo "You are running with root success"
 fi
 
-dnf list installed mysl
+dnf list installed mysql
 if [ $? -ne 0 ]
 then
-    echo "MySQL is not installed... going to install it"
+    echo "MySqL is not installed... going to install it"
     dnf isntal mysql -y
     if [ $? -eq 0 ]
     then
-       echo echo "MySQL is not installed... going to install it"
+       echo "Installing MySQL is ... SUCCESS"
     else
-       echo "Installing MySQL is ... FAILURE"
+       echo "Installing MySL is ... FAILURE"
        exit 1
 fi
 else
-    echo " echo "MySQL is already installed...Nothing to do"
+    echo "MySqL is already installed...Nothing to do"
 
 fi
