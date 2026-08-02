@@ -5,4 +5,4 @@
 
 echo "PID of Script-1: $$"
 
-./20-Script2.sh
+./20-script2.sh
